@@ -1,0 +1,844 @@
+* { -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clearfix{
+	clear: both;
+}
+body{
+	font-family: MicrosoftJhengHeiRegular;
+}
+.wrap{
+	max-width: 1024px;
+	margin: 0 auto;
+	background: #efe9e7;
+}
+.header{
+	background-image: url('../img/header_desktop.png');
+	width: 100%;
+	padding-bottom: 132px; 
+}
+
+
+@media (max-width: 600px) {
+	.header{
+	background-image: url('../img/header_mobile.png');
+	padding-bottom: 95px; 
+}
+}
+.topbar{
+background-color: rgba(0, 0, 0, 0.6);
+width:100%;
+padding-bottom: 25px;
+position: static;
+padding-bottom: 56px;
+}
+.logo a{
+	float: left;
+	text-decoration: none;
+	background-image: url('../img/logo_w(null).svg');
+	width: 120px;
+	height: 24px;
+	text-indent: -99px;
+	overflow: hidden;
+	margin: 16px 0px 16px 42px;
+}
+@media (max-width: 600px) {
+	.logo a{
+	margin: 16px 0px 16px 10px;}
+}
+
+.menu{
+	float: right;
+	margin: 10px;
+}
+.mobileMenu{
+	display: none;
+}
+.menu li{
+	float: left;
+}
+.menu li a{
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	padding: 10px 20px 10px 20px;
+	border-radius: 5%;
+}
+.menu li a:hover{
+	background-color: rgba(255, 255, 255, 0.7);
+	color: #000;
+
+}
+@media (max-width: 600px) {
+
+.menu{
+	float: none;
+	margin: 0;
+	position: absolute;
+	width: 100%;
+	top: 57px;
+	z-index: 100;
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 1s
+}
+.js-menu-show .menu{
+	max-height: 140px;
+}
+.mobileMenu{
+	display: block;
+	float: right;
+	font-size: 2em;
+	font-weight:bold;
+	margin-top: 10px;
+	margin-right: 15px;
+	color: gray;
+
+}
+.mobileMenu.active{
+	color: white;
+}
+
+.menu li{
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	float: none;
+	background-color: rgba(0, 0, 0, 0.9);
+	text-align: center;
+
+}
+.menu li a{
+	font-size: 1.5em;
+	display: block;
+	padding: 10px 0 10px 0;
+	border-radius: 0;
+
+}
+
+}
+
+.slogan{
+width: 460px;
+margin: 0 auto;
+margin-top: 67px;
+background-color: rgba(0, 0, 0, 0.6);
+text-align: center;
+padding-top: 20px;
+padding-bottom: 26px;
+}
+.slogan ul{
+	width: 100%;
+	padding-left: 12%;
+
+
+}
+.slogan ul li{
+	float: left;
+	padding-bottom: 20px;
+}
+.slogan h2{
+	color: #FFF;
+	font-size: 2em;
+
+}
+.slogan p{
+	color: #FFF;
+	line-height: 25px;
+}
+.slogan i{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+@media (max-width:600px) {
+	.slogan{
+   width: 288px;
+}
+.slogan ul{
+	padding-left: 0;
+}
+.slogan ul li{
+	float: none;
+}
+}
+
+.intro li{
+	float: left;
+	width: 33.333%;
+	text-align: center;
+	padding: 0px 20px 20px 20px; 
+	color: #3D1101 ;
+}
+.intro img{
+	border-radius: 100%;
+}
+.intro h3{
+	margin-top: 20px;
+	margin-bottom: 11px; 
+	font-size: 18px;
+
+}
+.intro p{
+	text-align: left;
+	letter-spacing: 1px;
+	padding: 10px;
+	line-height: 20px;
+}
+.infoTitle{
+	position: relative;
+	left: 25%;
+
+}
+.intro .infoTitle .line{
+	border-bottom: 1px solid #979797 ;
+	width: 10%;
+	display: block;
+
+}
+.intro .infoTitle li{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: auto;
+} 
+.intro .infoTitle h2{
+    font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+}
+@media (max-width: 768px) {
+.infoTitle{
+	left: 20%;
+}
+.intro li{
+	float: none;
+	width: 100%;
+}
+.intro .infoTitle{
+		left: 0;
+}
+.intro .infoTitle .line{
+        display: none;
+	border-bottom: 0 ;
+
+}
+}
+
+.chef{
+	background: #3d1101;
+	color: #EFE9E7;
+	margin-top: 3%;
+}
+.chef img{
+	width: 100%;
+}
+.chef li{
+	float: left;
+	width: 50%;
+	padding-left: 1%;
+	padding-right: 1%;
+
+}
+.chef h2{
+	font-size: 20px;
+	margin-top: 10%;
+	margin-bottom: 5px;
+}
+.chef p{
+	margin-bottom: 2%;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+.chef{
+	padding-bottom: 5%;
+}
+.chef li{
+	float: none;
+	width: 100%;
+
+}
+.chef h2{
+	font-size: 20px;
+	margin-top: 10%;
+	margin-bottom: 5px;
+	padding-left: 15px;
+}
+.chef p{
+	padding-left: 15px;
+	padding-right: 5px;
+
+}
+
+}
+
+.comment{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.intro.comment h2{
+	text-align: center;
+	font-size: 24px;
+	padding-bottom: 5%;
+}
+.intro.comment img{
+float: left;
+margin-right: 5%;
+}
+.intro.comment h3{
+	text-align: left;
+	padding-top: 2%;
+	color: #502819;
+}
+.intro.comment p{
+	color:#401505;
+	margin-top: 5%;
+	padding-left: 70px;
+	padding-right: 1%;
+}
+.comment h4{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	float: right;
+	color: #aa958e;
+}
+@media (max-width: 768px) {
+.comment{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+}
+@media (max-width: 768px) {
+	.intro.comment h2{
+	text-align: center;
+	font-size: 24px;
+	padding-bottom: 5%;
+}
+.intro.comment h3{
+	padding-top: 5%;
+}
+.intro.comment li{
+	padding-bottom: 8%;
+}
+.intro.comment p{
+	padding-right: 8%;
+}
+}
+.map{
+	background-color: #f6f4f3;
+	text-align: center;
+	padding-top: 5%;
+}
+.map h2{
+	font-size: 24px;
+	color: #51291a;
+	line-height: 30px;
+	font-weight: bold;
+}
+.map ul li{
+	float: left;
+	width: 50%;
+	margin-top: 3%;
+	padding-left: 1%;
+	padding-bottom: 5%;
+
+}
+.map .table label{
+	margin: 1%;
+}
+.map .table form{
+	text-align: left;
+	line-height: 30px;
+	color:#3D1101;
+	width: 100%;
+}
+.map .table input[type="text"],
+.map .table input[type="tel"],
+.map .table input[type="email"],
+.map .table input[type="number"]{
+	width: 95%;
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;
+}
+.map .table input[type="radio"]{
+	margin-right: 8%;
+		margin-top: 2%;
+	margin-bottom: 1.5%;
+}
+.map .table span{
+	font-size: 14px;
+}
+.resetBtn{
+	float: right;
+background-color: #a09e9e;
+margin-right: 10px;
+}
+.submitBtn{
+	float: right;
+	background-color: #f56c23;
+	margin-right: 5%;
+}
+@media (max-width: 768px) {
+
+.map{
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+.map h2{
+	font-size: 24px;
+	color: #51291a;
+	line-height: 30px;
+	font-weight: bold;
+}
+.map ul{
+	padding-top: 7%;
+}
+.map ul li{
+	float: none;
+	width: 100%;
+}
+
+.map .table form{
+	line-height: 7px;
+}
+.map .table span{
+	margin-left: 1%;
+}
+
+
+}
+.connection{
+	padding-left: 5%;
+	padding-top: 3%;
+}
+.connection >li{
+	float: left;
+	width: 33%;
+	padding-right: 50px;
+	padding-bottom: 5%;
+	line-height: 20px;
+	color: #3D1101;
+}
+.connection h2{
+    font-size: 24px;
+    margin-bottom: 6%;
+}
+.connection >li ul li{
+	list-style: disc;
+}
+.logo2 a{
+	float: right;
+	display: block;
+	text-decoration: none;
+	background-image: url('../img/logo_l@svg.svg');
+	width: 243px;
+	height: 48px;
+	text-indent:999px;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-right: 42px;
+}
+.link{
+	float:right;
+	margin-right: 37px;
+	margin-top: 22px;
+}
+.link li{
+	float: left;
+}
+.link a{
+	display: block;
+	width: 31px;
+	height: 36px;
+	float: left;
+	margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+
+.connection{
+	padding-left: 5%;
+	padding-top: 5%;
+}
+.connection >li{
+	float: none;
+	width: 100%;
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+.connection h2{
+    margin-bottom: 8%;
+}
+.logo2 a{
+	margin-right: 2%;
+}
+.link{
+	margin: 0 0;
+}
+}
+
+/* logincss , register */
+.login,.register{
+	padding-top: 5%;
+	text-align: center;
+	padding-bottom: 5%;
+}
+.login h3,.register h3{
+	font-size: 20px;
+	color: #3D1101;
+	font-weight: bold;
+	padding-top: 1%;
+	padding-bottom: 4%;
+}
+.loginBox,.registerBox{
+	width: 300px;
+	margin: 0 auto;
+	border-top: 3px  solid #FF5E45;
+	border-right: 1px solid rgba(0,0,0,0.16);
+	border-bottom: 1px solid rgba(0,0,0,0.16);
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    padding-top: 2%;
+}
+.registerBox{
+	width: 620px;
+}
+.loginBox h4,.registerBox h4{
+	font-size: 18px;
+	color: #3D1101;
+	font-weight: bold;
+}
+.loginForm{
+	margin-top: 5%;
+	line-height: 15px;
+}
+.loginBox .loginForm label{
+	text-align: left;
+	font-size: 18px;
+}
+.loginBox .loginForm input[type="email"],
+.loginBox .loginForm input[type="password"],
+.registerBox .registerForm input[type="email"],
+.registerBox .registerForm input[type="password"]{
+	width: 95%;
+}
+.forgotP{
+	text-align: left;
+	text-decoration: none;
+	display: block;
+	color: red;
+	margin-top: 3%;
+	margin-bottom: 5%;
+}
+.forgotP:hover{
+	color: blue;
+}
+.loginBtn{
+	float: left;
+	margin-top: 5%;
+	padding-left: 5%;
+} 
+.loginForm .signUpBtn{
+	float: left;
+	width: 125px;
+	height: 32px;
+    margin-left: 5%;
+	background: rgba(0,0,0,0.35);
+}
+.login .loginForm .signInBtn,
+.register .registerForm .signInBtn{
+	float: right;
+	width: 125px;
+	height: 32px;
+	background: #F56C23;
+	margin: 0;
+	margin-right: 5%;
+
+}
+.register .registerForm .signInBtn{
+	margin-top: 5%;
+}
+.registerForm .signInBtn{
+	margin-top: 8%;
+}
+.loginForm .signInBtn:hover,
+.registerForm .signInBtn:hover{
+	background: rgba(252,0,0,0.8);
+}
+.loginForm .signUpBtn:hover{
+	background: rgba(0,0,0,0.2);
+}
+.registerMessage li{
+	float: left;
+	width: 50%;
+	text-align: left;
+}
+.registerMessage li p,
+.registerMessage span{
+font-size: 18px;
+color: #3D1101;
+padding-right:10%;
+padding-left:3%;
+padding-top: 5%;
+}
+.registerMessage span{
+	font-size: 20px;
+}
+@media (max-width:630px) {
+	.registerBox{
+	width: 97%;
+}
+	.registerMessage li{
+	float: none;
+	width: 100%;
+	padding-top: 5%;
+}
+
+}
+.sidebar{
+	float: left;
+	width: 20%;
+
+
+}
+.sidebar h3{
+	margin-top: 50px;
+	font-size: 20px;
+}
+.sidebar img{
+	margin-top: 43px;
+	margin-left: 20px;
+	margin-right: 10px;
+float: left;
+width: 26px;
+}
+.sidebar ul{
+	margin-top: 20px;
+	text-align: left;
+}
+.sidebar li{
+	margin-left: 18px;
+}
+.sidebar a{
+	display: block;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+	text-decoration: none;
+	border-bottom: 1px solid #3D1101;
+	color: #3d1101;
+}
+.sidebar a:hover{
+	background-color: #3D1101;
+	color: white;
+}
+@media (max-width:480px) {
+.sidebar h3{
+	text-align: center;
+}
+.sidebar img{
+	margin-top: -5px;
+	margin-left: 15px;
+	margin-right: 2px;
+width: 26px;
+}
+.sidebar li{
+	margin-left: 2px;
+}
+}
+
+@media (max-width:650px) {
+.sidebar{
+	float: none;
+	width: 100%;
+
+}
+.sidebar h3{
+text-align: center;
+	margin-top: 50px;
+	font-size: 20px;
+}
+.sidebar img{
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+float: none;
+
+}
+.sidebar li{
+	margin-left: 18px;
+	margin-right: 20px;
+}
+}
+
+.commodity{
+		float: right;
+	width: 78%;
+}
+.toolsBar{
+	padding-top: 50px;
+	padding-left: 10px;
+}
+.toolsBar form{
+	float: left;
+}
+.toolsBar ul{
+	float: left;
+	padding-left:15%;
+}
+.toolsBar ul li{
+	display: inline;
+	width: auto;
+	margin-right: 10px;
+}
+.toolsBar input[type="search"]{
+	border: 2px solid #3D1101;
+	width:300px;
+	background: #efe9e7;
+
+}
+.toolsBar input[type="submit"]{
+	background-color: #3d1101;
+	border: 1px solid #3d1101;
+	color: white;
+	font-size: 17px;
+	margin-left: -4px;
+}
+.toolsBar a{
+	text-decoration: none;
+font-size: 16px;
+color: #3D1101;
+}
+.toolsBar .cartBtn{
+	margin-top: -14px;
+	float: right;
+	font-size: 40px;
+	position: relative;
+}
+@media (max-width:768px) {
+.toolsBar input[type="search"]{
+	width:250px;
+}
+.toolsBar ul{
+	float: left;
+	padding-left:5%;
+}
+}
+@media (max-width:650px) {
+.commodity{
+	float: none;
+	width: 100%;
+}
+.toolsBar{
+	padding-top: 50px;
+	padding-left: 10px;
+}
+.toolsBar form{
+	float: none;
+}
+.toolsBar ul{
+	float: right;
+	margin-top: 10%;
+	margin-right: 10%;
+	margin-bottom: 0;
+}
+.toolsBar ul li{
+	margin-right: 10px;
+}
+.toolsBar input[type="search"]{
+	width:80%;
+}
+}
+.listView >ul >li{
+	float: left;
+width: 30.333%;
+margin-right:1.5% ;
+margin-left: 10px;
+margin: 3% 1.5% 1% 10px;
+box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+}
+@media (max-width:768px) {
+	.listView >ul >li{
+	float: left;
+width: 45%;
+margin-right:1% ;
+}
+}
+@media (max-width:600px) {
+.listView >ul >li{
+	float: none;
+width: 100%;
+margin: 0;
+margin-top: 10%;
+}
+}
+
+.product {
+	text-align: center;
+color: #3D1101;
+padding-bottom: 5%;
+}
+.product  h2{
+font-size: 20px;
+color: #3D1101;
+margin-top: 11px;
+margin-bottom: 8px;
+}
+.product  p{
+	font-size: 12px;
+	margin-bottom: 5%;
+}
+.product  .product Line{
+	display: block;
+	margin: 0 auto;
+	border-bottom: 1px solid #3d1101;
+	width: 30%;
+}
+.product  h3{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-family: Roboto-Light;
+    font-size: 20px;
+}
+.product  img{
+	width: 100%;
+	height: auto;
+}
+.product  .inCart{
+	display: block;
+	border: 2px solid #FF5E45;
+border-radius: 3px;
+margin-left: 10px;
+margin-right: 10px;
+padding-top: 5px ;
+padding-bottom: 5px ;
+color: #FF5E45 ;
+text-decoration: none;
+}
+.product  .inCart i{
+	margin-right: 3px;
+}
+.product  .inCart:hover{
+	color: gray;
+	border: 2px solid gray;
+
+}
+.like{
+	color: white;
+	display: block;
+	position: absolute;
+	font-size: 25px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.count{
+	position: absolute;
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-color: red;
+	border-radius: 100%;
+	right: 0;
+	color: white;
+	font-size: 5px;
+	padding-left: 4.5px;
+	padding-top: 1.5px;
+
+}
