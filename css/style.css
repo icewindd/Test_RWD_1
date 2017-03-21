@@ -603,7 +603,7 @@ padding-top: 5%;
 	font-size: 20px;
 }
 .sidebar img{
-	margin-top: 43px;
+	margin-top: 0;
 	margin-left: 20px;
 	margin-right: 10px;
 float: left;
@@ -840,5 +840,29 @@ text-decoration: none;
 	font-size: 5px;
 	padding-left: 4.5px;
 	padding-top: 1.5px;
+}
+
+.top{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	text-align: center;
+	display: none;
+}
+.top.active{
+	display: block;
+}
+.top a{
+	display: block;
+	width: 50px;
+	height:  50px;
+	font-size: 3em;
+	background-color:  rgba(255, 255, 255, 0.5);
+	color: rgba(0,0,0,0.5);
+	border-radius: 35px;
+}
+.top a:hover{
+	background-color:  rgba(255, 255, 255, 0.8);
+	color: rgba(0,0,0,0.8);
 
 }
